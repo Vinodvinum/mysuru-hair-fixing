@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mysuru Hair Fixing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root { --primary: #4facfe; --primary-dark: #00f2fe; }
+        body { background: #f8f9ff; }
+        header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); }
+        main { max-width: 800px; margin: 120px auto 3rem; padding: 0 1rem; }
+        h1 { color: var(--primary); font-size: 2.8rem; margin-bottom: 2rem; }
+        form { display: flex; flex-direction: column; gap: 1.5rem; }
+        label { font-weight: 600; color: #555; }
+        input, textarea { padding: 0.75rem 1rem; border: 1.5px solid var(--primary); border-radius: 8px; font-size: 1rem; font-family: inherit; }
+        textarea { min-height: 120px; resize: vertical; }
+        button { background: linear-gradient(45deg, var(--primary), var(--primary-dark)); color: white; border: none; padding: 1rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; cursor: pointer; transition: all 0.3s; }
+        button:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(79,172,254,0.6); }
+        .contact-info { margin-top: 2rem; text-align: center; font-size: 1.1rem; color: #555; }
+        .contact-info a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .contact-info a:hover { text-decoration: underline; }
+        footer { background: #1a1a2e; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">💇 Mysuru Hair Fixing</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="before-after.html">Before/After</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message or inquiry" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>📍 Location:</strong><br>Suveera Plaza, 383, Kalidasa Rd<br>Near Chandrakala Hospital<br>Vijayanagar 1st Stage, Mysuru, Karnataka 570017</p>
+            <p style="margin-top: 1.5rem;"><strong>📞 Phone:</strong> <a href="tel:+919008482555">+91 9008482555</a></p>
+            <p><strong>📧 Email:</strong> <a href="mailto:info@mysuruhairfixing.com">info@mysuruhairfixing.com</a></p>
+            <p style="margin-top: 1.5rem;"><strong>⏰ Hours:</strong><br>Mon-Sat: 10:00 AM - 7:00 PM<br>Sun: 11:00 AM - 5:00 PM</p>
+            <p style="margin-top: 1.5rem;">
+                <a href="https://wa.me/919008482555?text=Hi%20Mysuru%20Hair%20Fixing%2C%20I%20want%20to%20book%20consultation" target="_blank" style="background: #25D366; color: white; padding: 1rem 2rem; border-radius: 50px; display: inline-block; text-decoration: none; font-weight: 600; transition: all 0.3s;">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Consultation
+                </a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Mysuru Hair Fixing</h4>
+                <p>Premium hair solutions for confidence & style</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="before-after.html">Gallery</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 +91 9008482555</p>
+                <p>📧 info@mysuruhairfixing.com</p>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <p style="text-align: center; margin-bottom: 0.5rem;">&copy; 2025 Mysuru Hair Fixing. All rights reserved.</p>
+        <div class="credit">Designed by <strong>Sushvin AI Labs</strong></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
